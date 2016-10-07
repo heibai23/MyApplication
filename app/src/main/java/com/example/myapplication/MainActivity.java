@@ -7,6 +7,8 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -19,6 +21,9 @@ public class MainActivity extends Activity {
     private View view1,view2,view3;     //页卡视图
     private ArrayList<View> viewList;        //装载页卡视图的集合
     private ArrayList<String>titleList;      //装载页卡标题的集合
+
+    private ImageView imView;
+    private TextView teView;
 
 
     @Override

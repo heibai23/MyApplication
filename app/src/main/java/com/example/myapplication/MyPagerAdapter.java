@@ -18,6 +18,7 @@ public class MyPagerAdapter extends PagerAdapter{
 
         this.viewList=viewList;
         this.titleList=titleList;
+
     }
 
     //实例化一个页卡
