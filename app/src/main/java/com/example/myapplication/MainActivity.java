@@ -9,10 +9,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements ViewPager.OnPageChangeListener{
 
     private TabLayout tabLayout;    //标题布局
     private ViewPager viewPager;        //
@@ -75,6 +76,32 @@ public class MainActivity extends Activity {
 
 
 
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        switch (position){
+            case 0:
+                Toast.makeText(MainActivity.this, "我是", Toast.LENGTH_SHORT).show();
+            break;
+            case 1:
+                Toast.makeText(MainActivity.this,"我是",Toast.LENGTH_LONG).show();
+                break;
+            case 2:
+                Toast.makeText(this,"我是",Toast.LENGTH_LONG).show();
+                break;
+        }
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
 
     }
 }
