@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:paddingTop="10dp"  不留空白-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mImageView2"
+        android:src="@drawable/ic_launcher"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mTextView2"
+        android:text="小金橘"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_dark"/>
+
+
+</LinearLayout>
